@@ -65,11 +65,64 @@ z_u             z_v
    Link probability
 ```
 
+## Repository Structure
+
+```text
+ACM_Ireland_Link_Prediction/
+│
+├── Datasets/
+│
+├── worldmodel.py
+│   └── World Model / GCN components
+│
+├── link_prediction.py
+│   └── Link-prediction models, baselines,
+│       metrics and negative sampling
+│
+├── train_link_pred.py
+│   └── Main link-prediction experiments
+│
+├── rollout.py
+│   └── Multi-step imagined rollout experiments
+│
+├── ablation.py
+│   └── Ablation experiments
+│
+└── README.md
+```
+
+---
+
 ## Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/Ansh911/ACM_Ireland_Link_Prediction.git
 cd ACM_Ireland_Link_Prediction
+```
 
+Create a virtual environment:
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate
+```
 
+Activate it on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Activate it on Linux/macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
