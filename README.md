@@ -38,7 +38,7 @@ The repository includes implementations or adaptations of:
 These models are adapted to the snapshot-based experimental setting used in
 this study. They should therefore be considered study implementations
 rather than exact reproductions of the official implementations.
----
+
 
 ## Overview
 
