@@ -63,6 +63,7 @@ z_u             z_v
         │
         ▼
    Link probability
+```
 
 ## Installation
 git clone https://github.com/Ansh911/ACM_Ireland_Link_Prediction.git
