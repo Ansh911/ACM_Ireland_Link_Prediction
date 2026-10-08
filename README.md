@@ -37,20 +37,20 @@ learned **MLP edge decoder**.
 The model operates on graph snapshots:
 
 ```text
-G_t
- │
- ├── Structural node features
- │
- ▼
+    G_t
+     │
+     ├── Structural node features
+     │
+     ▼
 ┌─────────────────────┐
 │     2-Layer GCN     │
 │  Graph Encoder      │
 └─────────────────────┘
- │
- ▼
+     │
+     ▼
 Node embeddings
- │
- ├───────────────┐
+     │
+ ────────────────┐
  │               │
  ▼               ▼
 z_u             z_v
