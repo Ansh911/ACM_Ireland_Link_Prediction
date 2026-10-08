@@ -126,3 +126,43 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
+## Running the Experiments
+
+### 1. Dataset Preprocessing
+
+#### Reddit
+
+```bash
+python process_reddit_hyperlinks.py soc-redditHyperlinks-body.tsv --max_nodes 35776 --n_snapshots 39 --window_days 30 --out reddit_30day.pkl
+```
+### AskUbuntu
+
+```bash
+python process_sx_temporal.py sx-askubuntu.txt --max_nodes 100000 --n_snapshots 39 --window_days 30 --out askubuntu_30day.pkl
+```
+
+### SuperUser
+
+```bash
+python process_sx_temporal.py sx-superuser.txt --max_nodes 100000 --n_snapshots 39 --window_days 30 --out superuser_30day.pkl
+```
+
+## Main Link Prediction Experiments
+
+### SuperUser
+
+```bash
+python train_link_pred.py --data_path superuser_30day.pkl --dataset_name SuperUser --epochs 100
+```
+
+### AskUbuntu
+
+```bash
+python train_link_pred.py --data_path askubuntu_30day.pkl --dataset_name AskUbuntu --epochs 100
+```
+
+### Reddit
+
+```bash
+python train_link_pred.py --data_path reddit_30day.pkl --dataset_name Reddit --epochs 100
+```
