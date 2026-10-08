@@ -26,6 +26,19 @@ and compare it with simplified implementations of:
 - TAMI
 
 ---
+## Baseline Models
+
+The repository includes implementations or adaptations of:
+
+- DyRep
+- GraphMixer
+- DyGFormer
+- TAMI
+
+These models are adapted to the snapshot-based experimental setting used in
+this study. They should therefore be considered study implementations
+rather than exact reproductions of the official implementations.
+---
 
 ## Overview
 
