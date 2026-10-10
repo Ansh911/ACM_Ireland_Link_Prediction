@@ -161,7 +161,7 @@ python process_sx_temporal.py sx-askubuntu.txt --max_nodes 100000 --n_snapshots 
 python process_sx_temporal.py sx-superuser.txt --max_nodes 100000 --n_snapshots 39 --window_days 30 --out superuser_30day.pkl
 ```
 
-## Main Link Prediction Experiments
+### 2. Main Link Prediction Experiments
 
 ### Reddit
 
@@ -179,7 +179,7 @@ python train_link_pred.py --data_path askubuntu_30day.pkl --dataset_name AskUbun
 ```bash
 python train_link_pred.py --data_path superuser_30day.pkl --dataset_name SuperUser --epochs 100
 ```
-## Ablation Studies
+### 3. Ablation Studies
 
 ### Reddit
 
@@ -199,7 +199,7 @@ python ablation.py --data_path askubuntu_30day.pkl --dataset_name AskUbuntu --ep
 python ablation.py --data_path superuser_30day.pkl --dataset_name SuperUser --epochs 100
 ```
 
-## Multi-Step Rollout Experiments
+### 4. Multi-Step Rollout Experiments
 
 ### Reddit
 
